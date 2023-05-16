@@ -1,7 +1,10 @@
 function countMe(arr) {
-
+  let count = {};
+  arr.forEach(function(value) {
+  count[value] = (count[value] || 0) + 1;
+  });
+  return count;
   }
-  
   console.log(countMe(['Sofyan', 'Ricky', 'Sofyan', 'Semmi', 'Semmi', 'Wika']));
   // { Sofyan: 2, Ricky: 1, Semmi: 2, Wika: 1 }
   
