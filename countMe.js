@@ -4,11 +4,13 @@ function countMe(arr) {
     for(let i = 0; i<arr.length ; i++){
         let d = arr[i]
         if(!result[d]){
-            result[d] = []
+            result[d] = 0
         }
         
-        result[d].push(arr[i])
+        result[d] += 1
     }
+
+  
     return result;
   }
   
